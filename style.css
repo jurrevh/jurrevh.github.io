@@ -1,20 +1,62 @@
-p {
-    font-family: Arial, Helvetica, sans-serif;
-    color: red
+h1, h2, p, li {
+    font-family: Arial, Helvetica, sans-serif
 }
 
-h1 {
-    font-family: Arial, Helvetica, sans-serif;
+body {
+    background-color: rgb(237, 209, 170);
 }
 
-.nav-link {
+header {
+    height: 100px;
+}
+.header-article {
+    height: 100%
+}
+
+.header-article h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    font-size: 3rem;
+    color: white;
+    -webkit-text-stroke: 4px black;
+    paint-order: stroke fill;
+}
+
+hr {
     color: black;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    border-style: solid;
-    border-color: black;
-    border-radius: 5px;
-    border-width: 2px;
-    text-decoration: none;
-    background-color: bisque;
+    height: 3px;
+    background-color: black;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333333;
+}
+
+ul li {
+  float: left;
+}
+
+ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  
+}
+
+.selected {
+    color: white;
+    background-color: black;
+
+}
+
+ul li a:hover {
+  background-color: #111111;
 }
