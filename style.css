@@ -1,83 +1,171 @@
-h1, h2, p, li {
-    font-family: Arial, Helvetica, sans-serif
-}
+    body {
+        background-color: #363946;
+        font-family: sans-serif;
+        color: white;
+    }
 
-body {
-    background-color: rgb(237, 209, 170);
-}
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 40px;
+    }
 
-header {
-    height: 100px;
-}
-.header-article {
-    height: 100%
-}
+    .logo {
+        color: white;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 700;
+    }
 
-.header-article h1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    font-size: 3rem;
-    color: white;
-    -webkit-text-stroke: 4px black;
-    paint-order: stroke fill;
-}
+    .navigation-bar {
+        display: flex;
+        list-style-type: none;
+        padding: 4px;
+        background-color: #111116;
+        border-radius: 30px;
+        align-items: center;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3)
+    }
 
-hr {
-    color: black;
-    height: 3px;
-    background-color: black;
-}
+    .navigation-bar li a {
+        display: block;
+        color: #b3b3b3;
+        padding: 10px 20px;
+        border-radius: 26px;
+        text-decoration: none;
+        font-weight: 500;
 
-.navigation-bar {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333333;
-}
+        transition: background-color 0.2s ease, color 0.2s ease;
+    }
 
-.navigation-bar li {
-  float: left;
-}
+    .navigation-bar li a:hover {
+        color: white;
+        background-color: rgba(111, 33, 236, 0.2);
+    }
 
-.navigation-bar li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  
-}
-
-.selected {
-    color: white;
-    background-color: black;
-
-}
-
-h2 {
-    margin-top: 40px;
-}
+    .selected {
+        color: white !important;
+        background-color: rgb(111, 33, 236);
+    }
 
 
-.navigation-bar li a:hover {
-  background-color: #111111;
-}
+    main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
-#piano {
-    width: 70px;
-    height: 70px;
-    margin-top: 30px;
-    margin-right: 10px;
-    margin-bottom: 20px;
-}
+    }
 
-#youtube {
-    width: 70px;
-    height: 50px;
-    margin-top: 30px;
-    margin-left: 10px;
-    margin-bottom: 20px;
-}
+    .introduction {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        margin-top: 100px;
+        background-color: #1e2029;
+        color: white;
+        width: 90%;
+        min-height: 400px;
+        padding: 40px;
+
+        border-style: solid;
+        border-radius: 20px;
+        border-color: #1e2029;
+
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+
+    }
+
+    .dashboard-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+
+    }
+
+    .dashboard-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        margin-top: 100px;
+        background-color: #1e2029;
+        color: white;
+        width: 70%;
+        min-height: 400px;
+        padding: 40px;
+
+        border-style: solid;
+        border-radius: 20px;
+        border-color: #1e2029;
+
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+
+    }
+
+
+    table {
+        border-spacing: 5px;
+    }
+
+    tr:nth-child(2) {
+        background-color: rgb(111 33 236 / 50%);
+    }
+
+    tr:nth-child(3) {
+        background-color: rgb(111 33 236 / 50%);
+    }
+
+    tr:nth-child(4) {
+        background-color: rgb(111 33 236 / 50%);
+    }
+
+    tr:nth-child(8) {
+        background-color: rgb(111 33 236 / 50%);
+    }
+
+    tr:nth-child(9) {
+        background-color: rgb(111 33 236 / 50%);
+    }
+
+    tr:nth-child(10) {
+        background-color: rgb(111 33 236 / 50%);
+    }
+
+    th,
+    td {
+        padding-top: 5px;
+        padding-bottom: 10px;
+        padding-left: 30px;
+        padding-right: 40px;
+    }
+
+    .progress-container {
+        width: 45px;
+        height: 400px;
+        background-color: #111116;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        position: relative;
+        border-radius: 10px;
+        overflow: hidden;
+        margin-left: 20px;
+    }
+
+    .progress-bar {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 50%;
+        background-color: rgb(111 33 236);
+        position: absolute;
+        bottom: 0;
+        transition: height 0.3s ease;
+
+        font-size: 12px;
+        font-weight: bold;
+        /* writing-mode: vertical-rl; */
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
