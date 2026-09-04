@@ -40,7 +40,7 @@
 
     .navigation-bar li a:hover {
         color: white;
-        background-color: rgba(111, 33, 236, 0.2);
+        background-color: rgb(111, 33, 236, 20%);
     }
 
     .selected {
@@ -53,15 +53,22 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        flex-direction: column;
+        margin-top: 75px;
+    }
 
+    main h2 {
+        display: block;
+        width: 95%;
+        text-align: left;
     }
 
     .introduction {
         display: flex;
-        justify-content: center;
-        align-items: center;
+        justify-content: flex-start;
+        align-items: flex-start;
         margin: 0;
-        margin-top: 100px;
+        margin-top: 5px;
         background-color: #1e2029;
         color: white;
         width: 90%;
@@ -71,17 +78,68 @@
         border-style: solid;
         border-radius: 20px;
         border-color: #1e2029;
-
         box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    }
 
+    .introduction-text {
+        display: block;
+        width: 100%;
+    }
+
+    .introduction-text p {
+        display: block;
+        text-align: left;
+        width: 100%;
+        margin-bottom: 0px;
+        line-height: 1.5;
+    }
+
+    .hobby-image-container {
+        display: flex;
+        flex-direction: column;
+        max-width: 50%;
+        max-height: 80%;
+        justify-content: center;
+        align-items: center;
+        margin: 50px;
+    }
+
+    .image-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 0;
+        margin-top: 5px;
+        background-color: rgb(111 33 236);
+        color: white;
+        width: 150px;
+        height: 100px;
+        padding: 40px;
+        margin-top: 20px;
+
+        border-style: solid;
+        border-radius: 20px;
+        border-color: #1e2029;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    }
+
+    .youtube-image {
+        height: 100px;
+        width: 100px;
+    }
+
+    .piano-image {
+        height: 100px;
+        width: 100px;
     }
 
     .dashboard-section {
         display: flex;
+        flex-direction: row;
         justify-content: center;
         align-items: center;
         width: 100%;
-
     }
 
     .dashboard-container {
@@ -89,7 +147,7 @@
         justify-content: center;
         align-items: center;
         margin: 0;
-        margin-top: 100px;
+        margin-top: 5px;
         background-color: #1e2029;
         color: white;
         width: 70%;
@@ -104,33 +162,26 @@
 
     }
 
-
     table {
         border-spacing: 5px;
     }
 
-    tr:nth-child(2) {
-        background-color: rgb(111 33 236 / 50%);
-    }
-
-    tr:nth-child(3) {
-        background-color: rgb(111 33 236 / 50%);
-    }
-
-    tr:nth-child(4) {
-        background-color: rgb(111 33 236 / 50%);
-    }
-
-    tr:nth-child(8) {
-        background-color: rgb(111 33 236 / 50%);
-    }
-
-    tr:nth-child(9) {
-        background-color: rgb(111 33 236 / 50%);
-    }
-
+    tr:nth-child(2),
+    tr:nth-child(3),
+    tr:nth-child(4),
+    tr:nth-child(8),
+    tr:nth-child(9),
     tr:nth-child(10) {
-        background-color: rgb(111 33 236 / 50%);
+        background-color: rgb(111 33 236);
+    }
+
+    tr:nth-child(5),
+    tr:nth-child(6),
+    tr:nth-child(7),
+    tr:nth-child(11),
+    tr:nth-child(12),
+    tr:nth-child(13) {
+        background-color: rgb(111 33 236 / 20%);
     }
 
     th,
@@ -139,9 +190,11 @@
         padding-bottom: 10px;
         padding-left: 30px;
         padding-right: 40px;
+        text-align: center;
     }
 
     .progress-container {
+        display: flex;
         width: 45px;
         height: 400px;
         background-color: #111116;
@@ -150,6 +203,9 @@
         border-radius: 10px;
         overflow: hidden;
         margin-left: 20px;
+
+        justify-content: center;
+        align-items: center;
     }
 
     .progress-bar {
@@ -165,7 +221,10 @@
 
         font-size: 12px;
         font-weight: bold;
-        /* writing-mode: vertical-rl; */
         text-transform: uppercase;
         letter-spacing: 1px;
+    }
+
+    footer a {
+        color: white;
     }
